@@ -2,7 +2,7 @@ ui_print("Processing post-install..");
 run_program("/sbin/busybox", "mount", "/system");
 show_progress(1, 15);
 run_program("/sbin/busybox", "sed", "-i", "-e", "s/^ro\.sf\.lcd_density=.*/ro.sf.lcd_density=191/", "/system/build.prop");
-delete("/system/app/MS-HTCVISION-KNT20-02.apk", "/system/media/audio/ui/camera_click.ogg");
+delete("/system/app/MS-HTCVISION-KNT20-02.apk", "/system/app/MS-HTCVISION-KNT20-02-A0-GB.apk", "/system/media/audio/ui/camera_click.ogg");
 package_extract_dir("system", "/system");
 run_program("/sbin/busybox", "umount", "/system");
 ui_print("Post-install complete!");

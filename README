@@ -11,7 +11,7 @@ Update.zip post-install for my HTC Vision(T-Mobile G2), an example for new andro
 
 Feel free to modify and repack to update.zip using:
 
- $ zip -r ../postinstall-unsign.zip .
+ $ zip -r postinstall-unsigned.zip META-INF/ system/
 
 And sign the zip using jarsigner, signapk, auto-sign, zipsigner, or whatever.
 
